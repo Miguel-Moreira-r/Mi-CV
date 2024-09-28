@@ -26,25 +26,11 @@ header h2 {
 }
 
 .profile-pic {
-    width: 180px; /* Tamaño de la foto de perfil ajustado */
+    width: 150px; /* Tamaño de la foto de perfil */
     border-radius: 50%; /* Hacer la imagen circular */
     position: absolute; /* Posicionar la foto en el header */
     left: 20px; /* Ajustar según sea necesario */
     top: 20px; /* Ajustar según sea necesario */
-}
-
-.linkedin {
-    margin-top: 10px; /* Espacio encima del enlace de LinkedIn */
-}
-
-.linkedin a {
-    color: #ffd700; /* Color dorado para el enlace de LinkedIn */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Negrita para destacar */
-}
-
-.linkedin a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
 .navbar {
@@ -114,7 +100,9 @@ footer {
 /* Estilo para dispositivos móviles */
 @media (max-width: 600px) {
     header img {
-        width: 120px; /* Tamaño ajustado en móvil */
+        width: 100px; /* Tamaño ajustado en móvil */
+        position: relative; /* Cambia a posición relativa para evitar solapamientos */
+        margin-bottom: 10px; /* Margen inferior para evitar solapamientos */
     }
 
     .navbar ul {
@@ -123,5 +111,16 @@ footer {
 
     .navbar li {
         margin: 10px 0; /* Espacio vertical entre elementos */
+    }
+
+    .profile-pic {
+        left: auto; /* Remover el posicionamiento absoluto */
+        right: auto; /* Remover el posicionamiento absoluto */
+        top: auto; /* Remover el posicionamiento absoluto */
+        margin: 0 auto; /* Centramos la imagen */
+    }
+
+    .section {
+        margin: 10px; /* Reduce márgenes en móvil */
     }
 }
