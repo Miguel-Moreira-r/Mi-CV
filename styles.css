@@ -26,11 +26,25 @@ header h2 {
 }
 
 .profile-pic {
-    width: 150px; /* Tamaño de la foto de perfil */
+    width: 120px; /* Tamaño de la foto de perfil ajustado */
+    height: 120px; /* Altura ajustada */
     border-radius: 50%; /* Hacer la imagen circular */
     position: absolute; /* Posicionar la foto en el header */
     left: 20px; /* Ajustar según sea necesario */
     top: 20px; /* Ajustar según sea necesario */
+}
+
+/* Asegurando que la imagen no solape en móviles */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 100px; /* Tamaño de la foto de perfil ajustado en móvil */
+        height: 100px; /* Altura ajustada en móvil */
+        top: 10px; /* Posición ajustada en móvil */
+    }
+
+    header h1 {
+        margin-top: 120px; /* Asegurar que haya espacio para la imagen en móvil */
+    }
 }
 
 .navbar {
@@ -100,9 +114,7 @@ footer {
 /* Estilo para dispositivos móviles */
 @media (max-width: 600px) {
     header img {
-        width: 100px; /* Tamaño ajustado en móvil */
-        position: relative; /* Cambia a posición relativa para evitar solapamientos */
-        margin-bottom: 10px; /* Margen inferior para evitar solapamientos */
+        width: 120px; /* Tamaño ajustado en móvil */
     }
 
     .navbar ul {
@@ -111,16 +123,5 @@ footer {
 
     .navbar li {
         margin: 10px 0; /* Espacio vertical entre elementos */
-    }
-
-    .profile-pic {
-        left: auto; /* Remover el posicionamiento absoluto */
-        right: auto; /* Remover el posicionamiento absoluto */
-        top: auto; /* Remover el posicionamiento absoluto */
-        margin: 0 auto; /* Centramos la imagen */
-    }
-
-    .section {
-        margin: 10px; /* Reduce márgenes en móvil */
     }
 }
