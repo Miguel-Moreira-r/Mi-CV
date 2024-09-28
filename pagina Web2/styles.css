@@ -1,0 +1,127 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff; /* Color de fondo del header */
+    color: white; /* Color del texto del header */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Para la posición de la imagen */
+}
+
+header h1, header h2 {
+    margin: 0; /* Eliminar márgenes del encabezado */
+}
+
+header h2 {
+    color: #ffffff; /* Cambiar color del texto de "Servicio Técnico / Atención al Cliente" a blanco */
+    margin-top: 10px; /* Espacio arriba del subtítulo */
+}
+
+.profile-pic {
+    width: 180px; /* Tamaño de la foto de perfil ajustado */
+    border-radius: 50%; /* Hacer la imagen circular */
+    position: absolute; /* Posicionar la foto en el header */
+    left: 20px; /* Ajustar según sea necesario */
+    top: 20px; /* Ajustar según sea necesario */
+}
+
+.linkedin {
+    margin-top: 10px; /* Espacio encima del enlace de LinkedIn */
+}
+
+.linkedin a {
+    color: #ffd700; /* Color dorado para el enlace de LinkedIn */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita para destacar */
+}
+
+.linkedin a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.navbar {
+    background: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px; /* Espacio entre elementos de la barra */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+/* Estilo para la sección de idiomas e información */
+.idiomas-info-container {
+    display: flex; /* Usar flexbox para organización horizontal */
+    justify-content: space-between; /* Espacio entre idiomas e información */
+    margin-top: 20px; /* Margen superior para separación */
+}
+
+.idiomas, .informacion {
+    flex: 1; /* Cada sección ocupa el mismo espacio */
+    margin: 0 10px; /* Margen a los lados para separación */
+}
+
+.idiomas h3, .informacion h3 {
+    margin-bottom: 10px; /* Espacio debajo de los encabezados */
+}
+
+.idiomas ul, .informacion ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 600px) {
+    header img {
+        width: 120px; /* Tamaño ajustado en móvil */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Cambiar a vertical en móvil */
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Espacio vertical entre elementos */
+    }
+}
